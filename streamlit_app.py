@@ -1,9 +1,7 @@
 import streamlit as st
 
-st.title("Simple Streamlit App")
+st.title("Hello Streamlit Cloud!")
 
-name = st.text_input("Enter your name")
-age = st.number_input("Enter your age", min_value=0)
-
+name = st.text_input("Your name:")
 if st.button("Submit"):
-    st.success(f"Hello {name}, you are {age} years old!")
+    st.success(f"Hi {name}!")
